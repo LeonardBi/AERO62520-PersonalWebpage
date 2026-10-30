@@ -1,0 +1,207 @@
+:root {
+    --primary-color: #2563eb;
+    --dark-color: #1e293b;
+    --light-color: #f8fafc;
+    --gray-color: #64748b;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: white;
+    padding: 0.6rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto 1.5rem auto;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    background: white;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+h2 {
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    color: var(--dark-color);
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.profile-name {
+    font-size: 2.2rem;
+    margin: 0 0 0.2rem 0;
+    color: var(--dark-color);
+    line-height: 1.2;
+}
+
+.profile-title {
+    font-size: 1.35rem;
+    color: var(--primary-color);
+    font-weight: 800;
+    margin: 0.3rem 0 1.5rem 0;
+}
+
+.skills-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: #f1f5f9;
+    padding: 1.2rem;
+    border-radius: 6px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.project-link {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+}
+
+.social-links a:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* 从 HTML 提取过来的新增样式 */
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.experience-card {
+    margin-bottom: 1rem;
+}
+
+.video-container {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 315px;
+    max-width: 600px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.video-caption {
+    font-size: 0.9rem;
+    color: var(--gray-color);
+    margin-top: 0.5rem;
+}
+
+.project-links-container {
+    margin-top: 1rem;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.connect-text {
+    margin-bottom: 1.5rem;
+    color: var(--gray-color);
+}
+
+.connect-links {
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--gray-color);
+    font-size: 0.9rem;
+}
+
+.footer-disclaimer {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    color: var(--gray-color);
+}
